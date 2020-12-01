@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.DeviceConSim">
+    <children>
+        <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #f2be90;">
+            <children>
+                <Text fill="WHITE" layoutX="110.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMP3101 I/O System Group Simulation">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="24.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Rectangle fx:id="monitor_driver" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="35.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="keyboard_driver" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="117.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="usb_driver" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="199.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="disk_driver" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="282.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="365.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="video_ctr" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="35.0" layoutY="272.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="keyboard_ctr" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="119.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="usb_ctr" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="201.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="disk_ctr" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="283.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="366.0" layoutY="271.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Rectangle fx:id="sys_bus" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="35.0" layoutY="219.0" stroke="BLACK" strokeType="INSIDE" width="405.0" />
+        <Rectangle fx:id="cpu" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="481.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+        <Line fx:id="monitor_cnt_line" endX="6.5" endY="36.0" layoutX="64.0" layoutY="183.0" startX="6.5" />
+        <Line fx:id="keyboard_cnt_line" endX="6.5" endY="36.0" layoutX="148.0" layoutY="183.0" startX="6.5" />
+        <Line fx:id="usb_cnt_line" endX="6.5" endY="36.0" layoutX="229.0" layoutY="183.0" startX="6.5" />
+        <Line fx:id="disk_cnt_line" endX="6.5" endY="36.0" layoutX="312.0" layoutY="183.0" startX="6.5" />
+        <Line endX="6.5" endY="36.0" layoutX="395.0" layoutY="183.0" startX="6.5" />
+        <Line fx:id="cpu_cnt_line" endX="35.0" endY="35.0" layoutX="405.0" layoutY="193.0" startX="76.0" startY="35.0" />
+        <Line endX="6.5" endY="36.0" layoutX="395.0" layoutY="235.0" startX="6.5" />
+        <Line fx:id="disk_ctr_cnt_line" endX="6.5" endY="36.0" layoutX="312.0" layoutY="235.0" startX="6.5" />
+        <Line fx:id="usb_ctr_cnt_line" endX="6.5" endY="36.0" layoutX="230.0" layoutY="235.0" startX="6.5" />
+        <Line fx:id="keyboard_ctr_cnt_line" endX="6.5" endY="36.0" layoutX="148.0" layoutY="235.0" startX="6.5" />
+        <Line fx:id="video_ctr_cnt_line" endX="6.5" endY="36.0" layoutX="64.0" layoutY="236.0" startX="6.5" />
+        <Text fill="WHITE" layoutX="48.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monitor">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="54.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Video">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="43.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controller">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="126.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keyboard">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="129.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keyboard">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="128.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controller">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="207.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USB Drive">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="223.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USB">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="211.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controller">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="290.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controller">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="377.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controller">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="287.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disk Drive">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="305.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disk">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="380.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="376.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="505.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPU">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Button fx:id="simulate_button" layoutX="498.0" layoutY="356.0" mnemonicParsing="false" onAction="#simulateButtonPushed" prefHeight="14.0" prefWidth="50.0" style="-fx-background-color: #010048;" text="Simulate" textFill="WHITE">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+        <Button fx:id="back_button" layoutX="436.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackButtonPushed" prefHeight="14.0" prefWidth="50.0" style="-fx-background-color: #010048;" text="Go Back" textFill="WHITE">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

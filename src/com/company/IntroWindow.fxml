@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.IntroWindowController">
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.IntroWindowController">
     <children>
-        <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #f2be90;">
+        <AnchorPane prefHeight="95.0" prefWidth="700.0" style="-fx-background-color: #f2be90;">
             <children>
-                <Text fill="WHITE" layoutX="110.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMP3101 I/O System Group Simulation">
+                <Text fill="WHITE" layoutX="160.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMP3101 I/O System Group Simulation">
                     <font>
                         <Font name="Arial Narrow Bold" size="24.0" />
                     </font>
                 </Text>
             </children></AnchorPane>
+        <AnchorPane layoutY="95.0" prefHeight="504.0" prefWidth="336.0">
+            <children>
+                <Text layoutX="93.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Members">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Text layoutX="30.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sanjay Williams : 620075930">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="30.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chevaun Bent : 620107660">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="31.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deidre-Ann Jemsion : 620071513">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="32.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Everslay Francis : 6201066294">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tameka Gayle : 620096269">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="364.0" layoutY="95.0" prefHeight="504.0" prefWidth="336.0">
+            <children>
+                <Text layoutX="117.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Button layoutX="574.0" layoutY="528.0" mnemonicParsing="false" onAction="#goBackButtonPushed" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #010048;" text="Go Back" textFill="WHITE">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

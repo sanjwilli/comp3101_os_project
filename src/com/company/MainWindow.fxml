@@ -6,35 +6,35 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MainWindowController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.MainWindowController">
     <children>
-        <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #f2be90;">
+        <AnchorPane prefHeight="95.0" prefWidth="700.0" style="-fx-background-color: #f2be90;">
             <children>
-                <Text fill="WHITE" layoutX="110.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMP3101 I/O System Group Simulation">
+                <Text fill="WHITE" layoutX="160.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMP3101 I/O System Group Simulation">
                     <font>
                         <Font name="Arial Narrow Bold" size="24.0" />
                     </font>
                 </Text>
             </children>
         </AnchorPane>
-        <AnchorPane layoutY="92.0" prefHeight="310.0" prefWidth="600.0" style="-fx-background-color: #f9f9f9;">
+        <AnchorPane layoutY="92.0" prefHeight="507.0" prefWidth="700.0" style="-fx-background-color: #f9f9f9;">
             <children>
-                <Button layoutX="100.0" layoutY="67.0" mnemonicParsing="false" onAction="#introductionSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Introduction" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="139.0" mnemonicParsing="false" onAction="#introductionSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Introduction" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="100.0" layoutY="124.0" mnemonicParsing="false" onAction="#deviceControllerSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Device Controller Simulation" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="196.0" mnemonicParsing="false" onAction="#deviceControllerSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Device Controller Simulation" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="100.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Interupt Simulation" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="255.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Interupt Simulation" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="100.0" layoutY="239.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="DMA Simulation" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="311.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="DMA Simulation" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>

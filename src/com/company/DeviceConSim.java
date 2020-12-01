@@ -16,6 +16,7 @@ import javafx.event.ActionEvent;
 
 /*import javax.swing.*;
 import java.awt.*;*/
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -142,5 +143,28 @@ public class DeviceConSim implements Initializable {
         introStage.show();
     }
 
+    /**
+     *
+     * This method will simulate
+     * Device Controller I/O system
+     */
+    public void simulateMonitorPushed(javafx.scene.input.MouseEvent mouseEvent) {
+        SequentialTransition seq = new SequentialTransition(pulse(monitor_driver), pulse(sys_bus), pulse(cpu), pulse(sys_bus), pulse(video_ctr));
+        seq.play();
+    }
 
+    public void simulateKeyboardPushed(javafx.scene.input.MouseEvent mouseEvent) {
+        SequentialTransition seq = new SequentialTransition(pulse(keyboard_driver), pulse(sys_bus), pulse(cpu), pulse(sys_bus), pulse(keyboard_ctr));
+        seq.play();
+    }
+
+    public void simulateUSBPushed(javafx.scene.input.MouseEvent mouseEvent) {
+        SequentialTransition seq = new SequentialTransition(pulse(usb_driver), pulse(sys_bus), pulse(cpu), pulse(sys_bus), pulse(usb_ctr));
+        seq.play();
+    }
+
+    public void simulateDiskPushed(javafx.scene.input.MouseEvent mouseEvent) {
+        SequentialTransition seq = new SequentialTransition(pulse(disk_driver), pulse(sys_bus), pulse(cpu), pulse(sys_bus), pulse(disk_ctr));
+        seq.play();
+    }
 }

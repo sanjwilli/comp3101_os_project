@@ -48,4 +48,26 @@ public class MainWindowController {
         deviceControlStage.setScene(deviceControlScene);
         deviceControlStage.show();
     }
+
+    /**
+     *
+     * This method changes the from the main
+     * scene to the DMA simulation
+     */
+    public void DMAControllerSceneButtonPushed(ActionEvent event) throws IOException {
+
+        DMA dma = new DMA();
+        dma.setVisible(true);
+        dma.setDefaultCloseOperation(Graphics.EXIT_ON_CLOSE);
+    }
+
+    /**
+     *
+     * This method open a panel to
+     * display the Interrupt Simulation
+     */
+    public void InterruptControllerSceneButtonPushed(ActionEvent event) throws IOException {
+        Interrupt interrupt = new Interrupt();
+        interrupt.paint(null);
+    }
 }

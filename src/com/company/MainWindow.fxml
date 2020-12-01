@@ -29,12 +29,12 @@
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="150.0" layoutY="255.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Interupt Simulation" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="255.0" mnemonicParsing="false" onAction="#InterruptControllerSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="Interupt Simulation" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
                 </Button>
-                <Button layoutX="150.0" layoutY="311.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="DMA Simulation" textFill="WHITE">
+                <Button layoutX="150.0" layoutY="311.0" mnemonicParsing="false" onAction="#DMAControllerSceneButtonPushed" prefHeight="32.0" prefWidth="400.0" style="-fx-background-color: #010048;" text="DMA Simulation" textFill="WHITE">
                     <font>
                         <Font name="Arial Narrow" size="14.0" />
                     </font>
